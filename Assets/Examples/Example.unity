@@ -194,3 +194,94 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1359207428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1359207431}
+  - component: {fileID: 1359207430}
+  - component: {fileID: 1359207429}
+  m_Layer: 0
+  m_Name: ExampleStatCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1359207429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359207428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba9740fa5ed5744591d0f08b4dd2642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stats: {fileID: 1359207430}
+  Modifiers:
+  - type:
+      _value: 0
+      _name: Strength
+      _statIcon: <sprite name="Icon_16px_CombatPower">
+      _description: Strength is the relative combat power of a unit.
+    value: 2
+    multiplier: 0
+    priority: 0
+    description: Base Strength
+  - type:
+      _value: 0
+      _name: Strength
+      _statIcon: <sprite name="Icon_16px_CombatPower">
+      _description: Strength is the relative combat power of a unit.
+    value: 0.2
+    multiplier: 1
+    priority: 1
+    description: Strength buff
+  - type:
+      _value: 2
+      _name: Max Action Points
+      _statIcon: <cspace=-3em><sprite name="Icon_16px_Good_AP"><sprite name="Modifier_16px_Max"></cspace>
+      _description: 
+    value: 12
+    multiplier: 0
+    priority: 0
+    description: Base Action Points
+  - type:
+      _value: 2
+      _name: Max Action Points
+      _statIcon: <cspace=-3em><sprite name="Icon_16px_Good_AP"><sprite name="Modifier_16px_Max"></cspace>
+      _description: 
+    value: -0.3
+    multiplier: 1
+    priority: 1
+    description: Action Point malus
+--- !u!114 &1359207430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359207428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b5c5a67c5570ec4ea910a99987c26a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statView: []
+--- !u!4 &1359207431
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359207428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
